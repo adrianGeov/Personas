@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Personas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+
+        .seleccionada {
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+<h1>Consultar Personas</h1>
+
+
+
+<!-- Formulario de búsqueda por ID -->
+<form id="buscarPersonaForm">
+    <div class="form-group mt-3">
+        <label for="idPersonaInput">Buscar por ID:</label>
+        <input type="text" class="form-control" id="idPersonaInput" placeholder="ID de la persona">
+    </div>
+    <button type="submit" class="btn btn-primary">Buscar</button>
+    <button id="mostrarTodasPersonasBtn" class="btn btn-primary">Mostrar Todas las Personas</button>
+    <a href="guardar.html" class="btn btn-success mr-2">Crear Persona</a>
+
+</form>
+
+<hr>
+<div id="resultadoConsulta">
+    <!-- Tabla para mostrar los resultados -->
+    <table id="tablaPersonas" class="table table-striped">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido Paterno</th>
+            <th>Apellido Materno</th>
+            <th>Año de Nacimiento</th>
+            <th>Dirección</th>
+            <th>Teléfono</th>
+            <th>Correo</th>
+            <th>Edad</th>
+            <th>Acciones</th>
+        </tr>
+        </thead>>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+
+<script src="js/consultar_persona.js"></script>
+<script src="js/eliminar.js"></script>
+</body>
+</html>

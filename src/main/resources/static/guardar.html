@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Persona</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<h1>Crear Persona</h1>
+<form id="crearPersonaForm">
+    <div class="form-group">
+        <label for="nombreInput">Nombre:</label>
+        <input type="text" class="form-control" id="nombreInput" placeholder="Ingrese el nombre" required>
+    </div>
+    <div class="form-group">
+        <label for="apellidoPaternoInput">Apellido Paterno:</label>
+        <input type="text" class="form-control" id="apellidoPaternoInput" placeholder="Ingrese el apellido paterno" required>
+    </div>
+    <div class="form-group">
+        <label for="apellidoMaternoInput">Apellido Materno:</label>
+        <input type="text" class="form-control" id="apellidoMaternoInput" placeholder="Ingrese el apellido materno" required>
+    </div>
+    <div class="form-group">
+        <label for="fechaNacimientoInput">Fecha de Nacimiento:</label>
+        <input type="date" class="form-control" id="fechaNacimientoInput" required>
+    </div>
+    <div class="form-group">
+        <label for="direccionInput">Dirección:</label>
+        <input type="text" class="form-control" id="direccionInput" placeholder="Ingrese la dirección" required>
+    </div>
+    <div class="form-group">
+        <label for="telefonoInput">Teléfono:</label>
+        <input type="text" class="form-control" id="telefonoInput" placeholder="Ingrese el teléfono" required>
+    </div>
+    <div class="form-group">
+        <label for="correoInput">Correo Electrónico:</label>
+        <input type="email" class="form-control" id="correoInput" placeholder="Ingrese el correo electrónico" required>
+    </div>
+
+
+    <button type="submit" class="btn btn-success">Guardar Persona</button>
+    <a href="personas.html" class="btn btn-primary mt-3">Regresar al Menú Principal</a>
+</form>
+
+
+
+<script src="js/crear_persona.js"></script>
+</body>
+</html>
